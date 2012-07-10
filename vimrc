@@ -97,7 +97,7 @@ set ignorecase
 set t_Co=256
 "set background=dark
 syntax on
-colorscheme ir_black
+silent! colorscheme ir_black
 
 " Key Mappings
 imap jj <Esc>
