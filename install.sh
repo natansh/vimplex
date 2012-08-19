@@ -13,4 +13,4 @@ mkdir -p tmp/undo tmp/swap tmp/backup
 mkdir bundle
 git clone https://github.com/gmarik/vundle.git bundle/vundle
 
-vim +BundleInstall +qall
+vim +BundleInstall +qall 2>/dev/null 

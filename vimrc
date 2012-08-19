@@ -11,25 +11,30 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
+Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'Rykka/colorv.vim'
 Bundle 'acustodioo/vim-tmux'
+Bundle 'vim-scripts/LanguageTool'
+Bundle 'tpope/vim-surround'
 
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
+" Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-rake'
+
+Bundle 'msanders/snipmate.vim'
 
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'leshill/vim-json'
 Bundle 'itspriddle/vim-jquery'
 Bundle 'nono/vim-handlebars'
+Bundle 'sukima/xmledit'
 
 Bundle 'mutewinter/nginx.vim'
 Bundle 'hallison/vim-markdown'
@@ -41,6 +46,9 @@ Bundle 'twerth/ir_black'
 Bundle 'L9'
 
 Bundle 'FuzzyFinder'
+
+Bundle 'rson/vim-conque'
+Bundle 'skwp/vim-ruby-conque'
 
 
 " non github repos
@@ -61,6 +69,15 @@ filetype plugin indent on     " required!
 
 " General Settings
 " --------------------------------------------------------------------
+
+" Graphical Movement
+map <up> gk
+map k gk
+imap <up> <C-o>gk
+map <down> gj
+map j gj
+imap <down> <C-o>gj
+map E ge
 
 " It is difficult to use '\' as it's position on the keyboard is non-standard
 " and difficult to reach.
@@ -107,9 +124,9 @@ filetype plugin indent on
 map <S-Enter> O<Esc>
 map <Enter> o<Esc>
 
-set laststatus=2   " Always show the statusline
+"set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 " From Vimified
 set undodir=~/.vim/tmp/undo//     " undo files
@@ -117,3 +134,24 @@ set backupdir=~/.vim/tmp/backup// " backups
 set directory=~/.vim/tmp/swap//   " swap files
 set backup 
 set noswapfile 
+
+set backspace=indent,eol,start
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+au FileType markdown set wrap lbr formatoptions=l
+
+" RSPEC
+nmap <silent> <Leader>rcrr :call RunRubyCurrentFileConque()<CR>
+nmap <silent> <Leader>rcss :call RunRspecCurrentFileConque()<CR>
+nmap <silent> <Leader>rcll :call RunRspecCurrentLineConque()<CR>
+nmap <silent> <Leader>rccc :call RunCucumberCurrentFileConque()<CR>
+nmap <silent> <Leader>rccl :call RunCucumberCurrentLineConque()<CR>
+nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
+nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+
+nnoremap <silent> <C-s> :call RelatedSpecVOpen()<CR>
+nnoremap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
