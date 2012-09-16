@@ -39,6 +39,9 @@ Bundle 'sukima/xmledit'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'hallison/vim-markdown'
 
+" Close brackets automatically
+Bundle 'Raimondi/delimitMate'
+
 " Theme bundle
 Bundle 'twerth/ir_black'
 
