@@ -53,6 +53,9 @@ Bundle 'FuzzyFinder'
 Bundle 'rson/vim-conque'
 Bundle 'skwp/vim-ruby-conque'
 
+" Bundles for PHP support
+Bundle 'vim-scripts/php.vim--Hodge'
+
 
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
@@ -158,3 +161,5 @@ nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
 
 nnoremap <silent> <C-s> :call RelatedSpecVOpen()<CR>
 nnoremap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
+
+let delimitMate_expand_cr=1
