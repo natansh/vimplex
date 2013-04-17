@@ -36,6 +36,8 @@ Bundle 'itspriddle/vim-jquery'
 Bundle 'nono/vim-handlebars'
 Bundle 'sukima/xmledit'
 
+Bundle 'derekwyatt/vim-scala'
+
 Bundle 'mutewinter/nginx.vim'
 Bundle 'hallison/vim-markdown'
 
