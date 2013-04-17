@@ -56,6 +56,8 @@ Bundle 'skwp/vim-ruby-conque'
 " Bundles for PHP support
 Bundle 'vim-scripts/php.vim--Hodge'
 
+" See which lines have changed inside Vim itself.
+Bundle 'airblade/vim-gitgutter'
 
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
