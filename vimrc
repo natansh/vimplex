@@ -152,6 +152,10 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+au FileType sml set tabstop=4
+au FileType sml set softtabstop=4
+au FileType sml set shiftwidth=4
+
 au FileType markdown set wrap lbr formatoptions=l
 
 " RSPEC
