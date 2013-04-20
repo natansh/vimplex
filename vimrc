@@ -27,6 +27,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
+Bundle 'vim-scripts/taglist.vim'
 
 Bundle 'msanders/snipmate.vim'
 
