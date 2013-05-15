@@ -340,8 +340,6 @@ silent! colorscheme ir_black
 " Key Mappings
 imap jj <Esc>
 
-filetype plugin indent on
-
 map <S-Enter> O<Esc>
 map <Enter> o<Esc>
 
