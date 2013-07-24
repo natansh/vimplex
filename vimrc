@@ -234,7 +234,7 @@ Bundle 'vim-scripts/taglist.vim'
 " All text typed in insert mode will be sent to your shell.
 "
 " Site: http://www.vim.org/scripts/script.php?script_id=2771
-Bundle 'rson/vim-conque'
+Bundle 'basepi/vim-conque'
 Bundle 'skwp/vim-ruby-conque'
 
 " vim-gitgutter
