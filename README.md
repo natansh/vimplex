@@ -4,9 +4,11 @@ vimplex
 A Vim structure based on the Vundle package management tool.
 
 ## Requirements
-Please make sure `git` and `ctags` are installed.
+Please make sure `git`, `ctags`, `make` and `ruby` are installed.
 
 ### For Mac (Using brew)
+Make sure you have installed the XCode Developer tools - having done so would've installed `ruby` and `make` automatically.
+
 ```bash
 brew install git
 brew install ctags
@@ -19,7 +21,10 @@ alias ctags >> ~/.bashrc
 ```
 
 ### For Ubuntu
+
 ```bash
+sudo apt-get install build-essentials 
+sudo apt-get install ruby
 sudo apt-get install git
 sudo apt-get install ctags
 ```
