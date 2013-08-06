@@ -236,7 +236,8 @@ let delimitMate_expand_cr = 1
 au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}"
 
 " Theme bundle
-Bundle 'twerth/ir_black'
+" Using a patched twerth/ir_black to make it play better with vim-gitgutter
+Bundle 'natansh/ir_black'
 
 " Taglist.vim
 " Brilliant for use with ctags!
