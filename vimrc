@@ -16,28 +16,6 @@ call vundle#rc()
 " Site: https://www.github.com/gmarik/vundle
 Bundle 'gmarik/vundle'
 
-" Python Mode
-"
-" Commands:
-" K         Show python docs (g:pymode_doc enabled)
-" <C-Space> Rope autocomplete (g:pymode_rope enabled)
-" <C-c>g    Rope goto definition (g:pymode_rope enabled)
-" <C-c>d    Rope show documentation (g:pymode_rope enabled)
-" <C-c>f    Rope find occurrences (g:pymode_rope enabled)
-" <Leader>r Run python (g:pymode_run enabled)
-" <Leader>b Set, unset breakpoint (g:pymode_breakpoint enabled)
-" [[        Jump on previous class or function (normal, visual, operator modes)
-" ]]        Jump on next class or function (normal, visual, operator modes)
-" [M        Jump on previous class or method (normal, visual, operator modes)
-" ]M        Jump on next class or method (normal, visual, operator modes)
-" aC C      Select a class. Ex: vaC, daC, dC, yaC, yC, caC, cC (normal, operator modes)
-" iC        Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)
-" aM M      Select a function or method. Ex: vaM, daM, dM, yaM, yM, caM, cM (normal, operator modes)
-" iM        Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)]
-"
-" Site: 
-Bundle 'klen/python-mode'
-
 " Command-T works so much better than NERDTree if you want to speedily open
 " files!
 "
@@ -185,6 +163,28 @@ Bundle 'Rykka/colorv.vim'
 "
 " Site:
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Python Mode
+"
+" Commands:
+" K         Show python docs (g:pymode_doc enabled)
+" <C-Space> Rope autocomplete (g:pymode_rope enabled)
+" <C-c>g    Rope goto definition (g:pymode_rope enabled)
+" <C-c>d    Rope show documentation (g:pymode_rope enabled)
+" <C-c>f    Rope find occurrences (g:pymode_rope enabled)
+" <Leader>r Run python (g:pymode_run enabled)
+" <Leader>b Set, unset breakpoint (g:pymode_breakpoint enabled)
+" [[        Jump on previous class or function (normal, visual, operator modes)
+" ]]        Jump on next class or function (normal, visual, operator modes)
+" [M        Jump on previous class or method (normal, visual, operator modes)
+" ]M        Jump on next class or method (normal, visual, operator modes)
+" aC C      Select a class. Ex: vaC, daC, dC, yaC, yC, caC, cC (normal, operator modes)
+" iC        Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)
+" aM M      Select a function or method. Ex: vaM, daM, dM, yaM, yM, caM, cM (normal, operator modes)
+" iM        Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)]
+"
+" Site: https://github.com/klen/python-mode
+Bundle 'klen/python-mode'
 
 " Syntax, Indent and Filetype plugin
 
