@@ -185,6 +185,8 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "
 " Site: https://github.com/klen/python-mode
 Bundle 'klen/python-mode'
+let g:pymode_syntax_space_errors=0
+
 
 " Syntax, Indent and Filetype plugin
 
