@@ -324,7 +324,9 @@ set noerrorbells
 set listchars=tab:>.,trail:%,extends:#,nbsp:.
 
 " Paste Toggle
+nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
+set showmode
 
 " Indentation
 set autoindent	" Automatically indent the new line
